@@ -69,6 +69,4 @@ python translate_json.py --input input.json --excel translationFile.xlsx --outpu
 - Ensure the Excel file has two columns: `Label` and `Translation`.
 - If a value in the JSON file is not found in the Excel file, the script assigns "TRANSLATION WAS NOT FOUND" as the translated value.
 - Unused labels in the Excel file are ignored.
-
-## License
-This project is licensed under the MIT License.
+- Name of the excel and input json should be matched or else the command should be modified accordingly.
