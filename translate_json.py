@@ -14,7 +14,8 @@ def process_json_file(input_path, output_path, translation_map):
 
     translated_data = {}
     for key, value in data.items():
-        translated_value = translation_map.get(value, value)
+        # Check if the value exists in the translation map
+        translated_value = translation_map.get(value, "TRANSLATION WAS NOT FOUND")
         translated_data[key] = translated_value
 
     with open(output_path, 'w', encoding='utf-8') as f:
